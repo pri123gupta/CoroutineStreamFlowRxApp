@@ -59,6 +59,10 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -66,4 +70,21 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
+    implementation(kotlin("script-runtime"))
+    implementation (libs.rxandroid)
+    implementation (libs.rxjava)
+    // to treat views(button clicks, key presses) as observables, viewbinding library
+    implementation (libs.rxbinding)
+//    implementation ("com.squareup.retrofit2:adapter-rx-java3:3.0.0") // network response is converted to observables
+//    implementation ("com.squareup.retrofit2:adapter-rxjava2:3.0.0")
+    implementation("com.squareup.retrofit2:adapter-rxjava3:2.9.0")
+
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation ("com.squareup.okhttp3:okhttp:4.9.3")
+
+
+//    implementation ("io.reactivex.rxjava3:rxandroid:3.0.0")
+//    implementation ("io.reactivex.rxjava3:rxjava:3.0.0")
 }
